@@ -1,0 +1,49 @@
+/*defining font for the page */
+@font-face {
+	font-family: 'fuzzy';
+	src: url('./FuzzyBubbles-Bold.ttf');
+}
+/*setting the backgroung and font */
+body {
+	background: url('./background.jpg');
+	font-family: fuzzy, sans-serif;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*color of all h1 */
+h1 {
+	color: #040075; 
+}
+
+/*centering the box using flex*/
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  min-height: 30vh;
+  border-radius: 20px;
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 50px;
+}
+/*following codes are for attributes inside the box*/ 
+.input{
+	display: block;
+	margin: 10px;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+.saved {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 10px;
+}

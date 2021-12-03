@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AmirHossein Taee">
+    <title>Gender helper</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="left">
+			<form id="form">
+				<h1>Mr or Ms?</h1>
+				<div class="input">
+					<label for="name_id">Name</label>
+					<input type="text" id="name"
+					maxlength="255" pattern="[A-Za-z ]+" required>
+					<br><br>
+					<input type="radio" id="male_check" value="male" name="gender">
+					<label for="male_check">Male</label>
+					<br>
+					<input type="radio" id="female_check" value="female" name="gender">
+					<label for="female_check">Female</label>
+					<br><br>
+					<button type="submit" id="submit_button">Submit</button>	
+					<br><br>
+					<button type="button" id="save_button">Save</button>
+				</div>
+			</form>
+		</div>
+		<div class="right">
+			<div class="result">
+				<h1>Prediction</h1>
+				<p><span id="gender_predict">gender</span></p>
+				<p><span id="probability">probability</span></p>
+			</div>
+			<div class="saved">
+				<h1>saved answer</h1>
+				<p><span id="saved_gender"></span></p>
+				<button type="button" id="clear">clear</button>
+			</div>
+		</div> 
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
