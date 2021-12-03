@@ -2,7 +2,6 @@
 document.getElementById('clear').onclick = function (event) {
     const name = document.getElementById('name').value;
     const names = getLocal();
-    event.preventDefault();
     if (name !== '' && names.hasOwnProperty(name)) {
         delete names[name];
         setLocal(names);
